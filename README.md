@@ -2,34 +2,36 @@
 
 > A brief one-line description of your project.
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Node.js](https://img.shields.io/badge/Node.js-20+-green)
-![React](https://img.shields.io/badge/React-19-61DAFB)
-![Express](https://img.shields.io/badge/Express.js-black)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
 ---
 
 ## 📖 Overview
 
-Describe what your project does and the problem it solves.
-
-Example:
-
-Dactra is a full-stack web application that allows users to ...
-It is built with React, Node.js, Express, and MongoDB and focuses on ...
+Doctor Appointment Booking System, user can choose the day and time of appointment for special doctor then can payment online with Stripe then doctor can cancel or complete the appointment
 
 ---
 
 ## ✨ Features
 
+- 🤵 SignUp & Login
 - 🔐 Authentication & Authorization
 - 👤 User Profiles
-- 📊 Dashboard
 - 📁 File Upload
 - 🔍 Search & Filtering
+- 📊 Dashboard
+- 🔖 Book an Apppointent
+- 💸 Payment Online
+- ✔️ Complete Appointment
+- ✖️ Cancel Appointment
 - 📱 Responsive Design
-- 🌙 Dark Mode
 - ⚡ Fast Performance
+  
 
 ---
 
@@ -49,8 +51,10 @@ It is built with React, Node.js, Express, and MongoDB and focuses on ...
 - Express.js
 - MongoDB
 - Mongoose
+- Stripe
 - JWT Authentication
 - Multer
+- Cloudinary
 
 ---
 
@@ -63,7 +67,7 @@ Dactra/
 │
 ├── backend/
 │
-├── README.md
+├── admin/
 │
 └── package.json
 ```
@@ -75,7 +79,7 @@ Dactra/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Dactra.git
+git clone https://github.com/ibrahimyasser450/Dactra.git
 ```
 
 Go into the project
@@ -100,6 +104,13 @@ cd frontend
 npm install
 ```
 
+### Admin
+
+```bash
+cd admin
+npm install
+```
+
 ---
 
 ## 🔑 Environment Variables
@@ -108,11 +119,15 @@ Create a `.env` file in the backend directory.
 
 ```env
 PORT=3000
-MONGO_URI=your_database_url
-JWT_SECRET=your_secret
 ```
 
 For the frontend:
+
+```env
+VITE_BACKEND_URL=http://localhost:3000
+```
+
+For the admin:
 
 ```env
 VITE_BACKEND_URL=http://localhost:3000
@@ -125,7 +140,7 @@ VITE_BACKEND_URL=http://localhost:3000
 Backend
 
 ```bash
-npm run dev
+npm run server
 ```
 
 Frontend
@@ -134,39 +149,14 @@ Frontend
 npm run dev
 ```
 
----
+Admin
 
-## 📸 Screenshots
-
-Add screenshots here.
-
-| Home | Dashboard |
-|------|-----------|
-| ![](screenshots/home.png) | ![](screenshots/dashboard.png) |
-
----
-
-## 🌍 API
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /api/auth/login | Login |
-| POST | /api/auth/register | Register |
-| GET | /api/users | Get Users |
-
+```bash
+npm run dev
+```
 ---
 
 ## 🚀 Deployment
-
-Frontend
-
-- Vercel
-- Netlify
-
-Backend
-
-- Render
-- Railway
 
 Database
 
@@ -177,24 +167,9 @@ Database
 ## 📈 Future Improvements
 
 - [ ] Email verification
-- [ ] Notifications
 - [ ] Chat
 - [ ] Multi-language support
 - [ ] Admin analytics
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-Fork the repository, create a feature branch, and submit a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
