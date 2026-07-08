@@ -67,9 +67,8 @@ Dactra/
 │
 ├── backend/
 │
-├── admin/
-│
-└── package.json
+└── admin/
+
 ```
 
 ---
