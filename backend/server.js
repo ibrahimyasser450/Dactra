@@ -29,7 +29,6 @@ app.use(
     },
   }),
 );
-app.options("*", cors());
 
 // set security HTTP headers
 app.use(helmet());
