@@ -1,6 +1,6 @@
 # 🚀 Dactra
 
-> A brief one-line description of your project.
+> A brief one-line description of my project.
 
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
