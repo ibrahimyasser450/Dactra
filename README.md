@@ -177,5 +177,3 @@ Database
 **Ibrahim Yasser**
 
 GitHub: https://github.com/ibrahimyasser450
-
-LinkedIn: Your LinkedIn
