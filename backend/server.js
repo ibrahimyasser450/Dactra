@@ -55,3 +55,6 @@ app.get("/", (req, res) => {
 if (process.env.NODE_ENV !== "production") {
   app.listen(port, () => console.log(`Server Started on ${port} 😋`));
 }
+
+// must when want to deploy at vercel
+export default app;
