@@ -42,7 +42,10 @@ app.use("/api/doctor", doctorRouter);
 app.use("/api/user", userRouter);
 
 app.get("/", (req, res) => {
-  res.send("API WORKING");
+  // res.send("API WORKING");
+  console.log("API WORKING");
 });
 
-app.listen(port, () => console.log(`Server Started on ${port} 😋`));
+if (process.env.NODE_ENV !== "production") {
+  app.listen(port, () => console.log(`Server Started on ${port} 😋`));
+}
